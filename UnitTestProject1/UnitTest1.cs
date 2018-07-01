@@ -32,9 +32,13 @@ namespace UnitTestProject1
 			//The Shipper GetInstance method returns the appropriate class using ZipCode
 			//Can be extended to include further sub classes
 			Shipper shipper1 = Shipper.GetInstance(fromZipCode);
-			Assert.AreEqual(12.5 * .39, shipper1.GetCost(12.5));
+			Assert.AreEqual(12.5 * .39, shipper1.GetLetterCost(12.5));
 
-			
+			var shipment = Shipment.getInstance(0, toAddress, fromAddress, "99999", "90125", 999);
+			var shipper = Shipper.GetInstance("90125");
+			var response = shipment.ship(shipper);
+			Assert.IsNotNull(response);
+
 		}
 	}
 }

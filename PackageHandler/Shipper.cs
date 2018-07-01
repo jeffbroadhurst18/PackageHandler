@@ -37,31 +37,67 @@ namespace PackageHandler
 			return rval;
 		}
 
-		public abstract double GetCost(double weight);
-		
-    }
+		public abstract double GetPackageCost(double weight); //abstract methods must be overridden
+		public abstract double GetLetterCost(double weight);
+		public abstract double GetOversizeSurcharge(double weight);
+		//don't decide which price band to charge in the GetCost method.  Instead we work out the price band and call the rquired method on the shipper object.
 
+	}
+
+	//Open for extension but not modification
+	//If you add a new shipper type you don't have to amend a method that might break now existing shippers work
+	//you just add a new class and so the existing classes are kept untouched.
 	public class AirEastShipper : Shipper
 	{
-		public override double GetCost(double weight)
+		public override double GetLetterCost(double weight)
 		{
-			return weight * 0.39;
+			return weight * .39;
+		}
+
+		public override double GetOversizeSurcharge(double weight)
+		{
+			return 10;
+		}
+
+		public override double GetPackageCost(double weight)
+		{
+			return weight * .24;
 		}
 	}
 
 	public class ChicagoSprintShipper : Shipper
 	{
-		public override double GetCost(double weight)
+		public override double GetLetterCost(double weight)
 		{
-			return weight * 0.42;
+			return weight * .42;
+		}
+
+		public override double GetOversizeSurcharge(double weight)
+		{
+			return 0;
+		}
+
+		public override double GetPackageCost(double weight)
+		{
+			return weight * .20;
 		}
 	}
 
 	public class PacificParcelShipper : Shipper
 	{
-		public override double GetCost(double weight)
+		public override double GetLetterCost(double weight)
 		{
-			return weight * 0.51;
+			return weight * .51;
+		}
+
+		public override double GetOversizeSurcharge(double weight)
+		{
+			return weight * .02;
+		}
+
+		public override double GetPackageCost(double weight)
+		{
+			return weight * .19;
 		}
 	}
 }

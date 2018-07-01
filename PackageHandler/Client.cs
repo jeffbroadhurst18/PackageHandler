@@ -29,7 +29,7 @@ namespace PackageHandler
 			//getShipmentDetails();
 			myShipment = Shipment.getInstance(ShipmentId, toAddress, fromAddress, toZipCode, fromZipCode, weight);
 			//getInstance is a static method so you don't have to instantiate class.
-			//to access statis method you don't have to instantiate class
+			//to access static method you don't have to instantiate class
 		}
 
 		//private void getShipmentDetails()
