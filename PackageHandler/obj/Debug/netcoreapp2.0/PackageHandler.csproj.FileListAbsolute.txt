@@ -1,0 +1,11 @@
+c:\users\jeff\Source\Repos\PackageHandler\PackageHandler\bin\Debug\netcoreapp2.0\PackageHandler.deps.json
+c:\users\jeff\Source\Repos\PackageHandler\PackageHandler\bin\Debug\netcoreapp2.0\PackageHandler.runtimeconfig.json
+c:\users\jeff\Source\Repos\PackageHandler\PackageHandler\bin\Debug\netcoreapp2.0\PackageHandler.runtimeconfig.dev.json
+c:\users\jeff\Source\Repos\PackageHandler\PackageHandler\bin\Debug\netcoreapp2.0\PackageHandler.dll
+c:\users\jeff\Source\Repos\PackageHandler\PackageHandler\bin\Debug\netcoreapp2.0\PackageHandler.pdb
+c:\users\jeff\Source\Repos\PackageHandler\PackageHandler\obj\Debug\netcoreapp2.0\PackageHandler.csprojResolveAssemblyReference.cache
+c:\users\jeff\Source\Repos\PackageHandler\PackageHandler\obj\Debug\netcoreapp2.0\PackageHandler.csproj.CoreCompileInputs.cache
+c:\users\jeff\Source\Repos\PackageHandler\PackageHandler\obj\Debug\netcoreapp2.0\PackageHandler.AssemblyInfoInputs.cache
+c:\users\jeff\Source\Repos\PackageHandler\PackageHandler\obj\Debug\netcoreapp2.0\PackageHandler.AssemblyInfo.cs
+c:\users\jeff\Source\Repos\PackageHandler\PackageHandler\obj\Debug\netcoreapp2.0\PackageHandler.dll
+c:\users\jeff\Source\Repos\PackageHandler\PackageHandler\obj\Debug\netcoreapp2.0\PackageHandler.pdb
