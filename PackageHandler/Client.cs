@@ -4,6 +4,7 @@ namespace PackageHandler
 {
     class Client
     {
+		private PackageHandlerMediator myMediator = PackageHandlerMediator.getInstance();
 		private int ShipmentId;
 		private string toAddress;
 		private string fromAddress;
@@ -11,6 +12,7 @@ namespace PackageHandler
 		private string fromZipCode;
 		private Shipment myShipment;
 		private double weight;
+		private bool fragile, leave, receipt;
 
         static void Main(string[] args)
         {
@@ -27,7 +29,7 @@ namespace PackageHandler
 		public void executeStatement()
 		{
 			//getShipmentDetails();
-			myShipment = Shipment.getInstance(ShipmentId, toAddress, fromAddress, toZipCode, fromZipCode, weight);
+			myShipment = Shipment.getInstance(ShipmentId, toAddress, fromAddress, toZipCode, fromZipCode, weight, fragile, leave, receipt);
 			//getInstance is a static method so you don't have to instantiate class.
 			//to access static method you don't have to instantiate class
 		}

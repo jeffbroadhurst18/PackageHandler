@@ -14,3 +14,5 @@ c:\users\jeff\Source\Repos\PackageHandler\UnitTestProject1\obj\Debug\netcoreapp2
 c:\users\jeff\Source\Repos\PackageHandler\UnitTestProject1\obj\Debug\netcoreapp2.0\UnitTestProject1.AssemblyInfo.cs
 c:\users\jeff\Source\Repos\PackageHandler\UnitTestProject1\obj\Debug\netcoreapp2.0\UnitTestProject1.dll
 c:\users\jeff\Source\Repos\PackageHandler\UnitTestProject1\obj\Debug\netcoreapp2.0\UnitTestProject1.pdb
+C:\Users\Jeff\Source\Repos\PackageHandler\UnitTestProject1\bin\Debug\netcoreapp2.0\CarDealer.dll
+C:\Users\Jeff\Source\Repos\PackageHandler\UnitTestProject1\bin\Debug\netcoreapp2.0\CarDealer.pdb

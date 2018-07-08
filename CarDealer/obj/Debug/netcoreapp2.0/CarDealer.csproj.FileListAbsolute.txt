@@ -1,0 +1,11 @@
+C:\Users\Jeff\Source\Repos\PackageHandler\CarDealer\bin\Debug\netcoreapp2.0\CarDealer.deps.json
+C:\Users\Jeff\Source\Repos\PackageHandler\CarDealer\bin\Debug\netcoreapp2.0\CarDealer.runtimeconfig.json
+C:\Users\Jeff\Source\Repos\PackageHandler\CarDealer\bin\Debug\netcoreapp2.0\CarDealer.runtimeconfig.dev.json
+C:\Users\Jeff\Source\Repos\PackageHandler\CarDealer\bin\Debug\netcoreapp2.0\CarDealer.dll
+C:\Users\Jeff\Source\Repos\PackageHandler\CarDealer\bin\Debug\netcoreapp2.0\CarDealer.pdb
+C:\Users\Jeff\Source\Repos\PackageHandler\CarDealer\obj\Debug\netcoreapp2.0\CarDealer.csprojResolveAssemblyReference.cache
+C:\Users\Jeff\Source\Repos\PackageHandler\CarDealer\obj\Debug\netcoreapp2.0\CarDealer.csproj.CoreCompileInputs.cache
+C:\Users\Jeff\Source\Repos\PackageHandler\CarDealer\obj\Debug\netcoreapp2.0\CarDealer.AssemblyInfoInputs.cache
+C:\Users\Jeff\Source\Repos\PackageHandler\CarDealer\obj\Debug\netcoreapp2.0\CarDealer.AssemblyInfo.cs
+C:\Users\Jeff\Source\Repos\PackageHandler\CarDealer\obj\Debug\netcoreapp2.0\CarDealer.dll
+C:\Users\Jeff\Source\Repos\PackageHandler\CarDealer\obj\Debug\netcoreapp2.0\CarDealer.pdb

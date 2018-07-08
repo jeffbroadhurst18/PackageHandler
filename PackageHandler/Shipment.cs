@@ -12,12 +12,20 @@ namespace PackageHandler
 		private string myToZipCode;
 		private string myFromZipCode;
 		private double myWeight;
+		private bool myFragile;
+		private bool myLeave;
+		private bool myReceipt;
 
 		public static readonly double MAX_WEIGHT_LETTER_OZ = 15;
 		public static readonly double MAX_WEIGHT_PACKAGE_OZ = 160;
 
+		protected Shipment()
+		{
+
+		}
+
 		// protected so it can be accessed by derived classes
-		protected Shipment(int ShipmentId, string toAddress, string fromAddress, string toZipCode, string fromZipCode, double weight)
+		protected Shipment(int ShipmentId, string toAddress, string fromAddress, string toZipCode, string fromZipCode, double weight,bool fragile,bool leave, bool receipt)
 		{
 			// private contstructor, run when the Shipment object is instantiated.
 			if (ShipmentId == 0)
@@ -30,24 +38,15 @@ namespace PackageHandler
 			this.myToZipCode = toZipCode;
 			this.myFromZipCode = fromZipCode;
 			this.myWeight = weight;
+			this.myFragile = fragile;
+			this.myLeave = leave;
+			this.myReceipt = receipt;
 		}
 
 		//returns a different type of shipment object
-		public static Shipment getInstance(int shipmentId, string toAddress, string fromAddress, string toZipCode, string fromZipCode, double weight)
+		public static Shipment getInstance(int shipmentId, string toAddress, string fromAddress, string toZipCode, string fromZipCode, double weight,bool fragile, bool leave, bool receipt)
 		{
-			//For each of the different options return a different type of object
-			if (weight > MAX_WEIGHT_PACKAGE_OZ)
-			{
-				return new Oversized(shipmentId, toAddress, fromAddress, toZipCode, fromZipCode, weight);
-			}
-			else if (weight > MAX_WEIGHT_LETTER_OZ)
-			{
-				return new Package(shipmentId, toAddress, fromAddress, toZipCode, fromZipCode, weight);
-			}
-			return new Letter(shipmentId, toAddress, fromAddress, toZipCode, fromZipCode, weight);
-			//return new Shipment(shipmentId, toAddress, fromAddress, toZipCode, fromZipCode, weight);
-			//static method returns a new instance of Shipment
-			//rather than instantiating and doing this in the Constructor a
+			return ShipmentFactory.getInstance().getShipment(shipmentId, toAddress, fromAddress, toZipCode, fromZipCode, weight, fragile, leave, receipt);
 		}
 
 		virtual public int ShipmentId
@@ -79,6 +78,24 @@ namespace PackageHandler
 			set { myFromAddress = value; } // set the value of the internal variable using value
 		}
 
+		virtual public bool Fragile
+		{
+			get { return myFragile; }
+			set { myFragile = value; } // set the value of the internal variable using value
+		}
+
+		virtual public bool Receipt
+		{
+			get { return myReceipt; }
+			set { myReceipt = value; } // set the value of the internal variable using value
+		}
+
+		virtual public bool Leave
+		{
+			get { return myLeave; }
+			set { myLeave = value; } // set the value of the internal variable using value
+		}
+
 		private static int LastId = 0;
 
 		private int getShipmentId()
@@ -108,8 +125,8 @@ namespace PackageHandler
 
 	public class Letter : Shipment
 	{
-		public Letter(int ShipmentId, string toAddress, string fromAddress, string toZipCode, string fromZipCode, double weight)
-			: base(ShipmentId, toAddress, fromAddress, toZipCode, fromZipCode, weight) //call the constructor on the base method
+		public Letter(int ShipmentId, string toAddress, string fromAddress, string toZipCode, string fromZipCode, double weight,bool fragile, bool leave, bool receipt)
+			: base(ShipmentId, toAddress, fromAddress, toZipCode, fromZipCode, weight, fragile, leave, receipt) //call the constructor on the base method
 		{
 
 		}
@@ -123,8 +140,8 @@ namespace PackageHandler
 
 	public class Package : Shipment
 	{
-		public Package(int ShipmentId, string toAddress, string fromAddress, string toZipCode, string fromZipCode, double weight)
-			: base(ShipmentId, toAddress, fromAddress, toZipCode, fromZipCode, weight) //call the constructor on the base method
+		public Package(int ShipmentId, string toAddress, string fromAddress, string toZipCode, string fromZipCode, double weight, bool fragile, bool leave, bool receipt)
+			: base(ShipmentId, toAddress, fromAddress, toZipCode, fromZipCode, weight, fragile, leave, receipt) //call the constructor on the base method
 		{
 
 		}
@@ -138,8 +155,8 @@ namespace PackageHandler
 
 	public class Oversized : Shipment
 		{
-		public Oversized(int ShipmentId, string toAddress, string fromAddress, string toZipCode, string fromZipCode, double weight)
-			: base(ShipmentId,toAddress,fromAddress,toZipCode,fromZipCode,weight) //call the constructor on the base method
+		public Oversized(int ShipmentId, string toAddress, string fromAddress, string toZipCode, string fromZipCode, double weight,bool fragile, bool leave, bool receipt)
+			: base(ShipmentId,toAddress,fromAddress,toZipCode,fromZipCode,weight, fragile, leave, receipt) //call the constructor on the base method
 		{
 			
 		}

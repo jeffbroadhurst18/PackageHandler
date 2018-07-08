@@ -673,11 +673,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "c:\\users\\jeff\\Source\\Repos\\PackageHandler\\PackageHandler\\PackageHandler.csproj",
+      "projectUniqueName": "C:\\Users\\Jeff\\Source\\Repos\\PackageHandler\\PackageHandler\\PackageHandler.csproj",
       "projectName": "PackageHandler",
-      "projectPath": "c:\\users\\jeff\\Source\\Repos\\PackageHandler\\PackageHandler\\PackageHandler.csproj",
+      "projectPath": "C:\\Users\\Jeff\\Source\\Repos\\PackageHandler\\PackageHandler\\PackageHandler.csproj",
       "packagesPath": "C:\\Users\\Jeff\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\jeff\\Source\\Repos\\PackageHandler\\PackageHandler\\obj\\",
+      "outputPath": "C:\\Users\\Jeff\\Source\\Repos\\PackageHandler\\PackageHandler\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

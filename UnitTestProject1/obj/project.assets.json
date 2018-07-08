@@ -1612,6 +1612,19 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
+      "CarDealer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CarDealer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CarDealer.dll": {}
+        }
+      },
       "PackageHandler/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -5697,6 +5710,11 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
+    "CarDealer/1.0.0": {
+      "type": "project",
+      "path": "../CarDealer/CarDealer.csproj",
+      "msbuildProject": "../CarDealer/CarDealer.csproj"
+    },
     "PackageHandler/1.0.0": {
       "type": "project",
       "path": "../PackageHandler/PackageHandler.csproj",
@@ -5705,6 +5723,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "CarDealer >= 1.0.0",
       "MSTest.TestAdapter >= 1.2.0",
       "MSTest.TestFramework >= 1.2.0",
       "Microsoft.NET.Test.Sdk >= 15.5.0",
@@ -5722,11 +5741,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "c:\\users\\jeff\\Source\\Repos\\PackageHandler\\UnitTestProject1\\UnitTestProject1.csproj",
+      "projectUniqueName": "C:\\Users\\Jeff\\Source\\Repos\\PackageHandler\\UnitTestProject1\\UnitTestProject1.csproj",
       "projectName": "UnitTestProject1",
-      "projectPath": "c:\\users\\jeff\\Source\\Repos\\PackageHandler\\UnitTestProject1\\UnitTestProject1.csproj",
+      "projectPath": "C:\\Users\\Jeff\\Source\\Repos\\PackageHandler\\UnitTestProject1\\UnitTestProject1.csproj",
       "packagesPath": "C:\\Users\\Jeff\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\jeff\\Source\\Repos\\PackageHandler\\UnitTestProject1\\obj\\",
+      "outputPath": "C:\\Users\\Jeff\\Source\\Repos\\PackageHandler\\UnitTestProject1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5745,8 +5764,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "c:\\users\\jeff\\Source\\Repos\\PackageHandler\\PackageHandler\\PackageHandler.csproj": {
-              "projectPath": "c:\\users\\jeff\\Source\\Repos\\PackageHandler\\PackageHandler\\PackageHandler.csproj"
+            "C:\\Users\\Jeff\\Source\\Repos\\PackageHandler\\PackageHandler\\PackageHandler.csproj": {
+              "projectPath": "C:\\Users\\Jeff\\Source\\Repos\\PackageHandler\\PackageHandler\\PackageHandler.csproj"
+            },
+            "C:\\Users\\Jeff\\Source\\Repos\\PackageHandler\\CarDealer\\CarDealer.csproj": {
+              "projectPath": "C:\\Users\\Jeff\\Source\\Repos\\PackageHandler\\CarDealer\\CarDealer.csproj"
             }
           }
         }
